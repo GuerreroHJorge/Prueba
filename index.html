@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+</head>
+<style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: black;
+        height: 120px;
+        padding-top: 20px; 
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        color: goldenrod;
+    }
+
+    header > p {
+        color: aliceblue;
+        text-align: end;
+    }
+    
+    main {
+        background-color: bisque;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    div > img {
+        float: left;
+        margin-right: 40px;
+
+        max-width: 220px;
+        max-height: 220px;
+
+        min-width: 165px;
+        min-height: 165px;
+    }
+
+    #descripcion {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .divMedio {
+        width: 50%;
+        font-family: fantasy;
+        padding-bottom: 20px;
+        float: left;
+    }
+
+    /*Arreglar problemas con los flotados*/
+    .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    hr + .divMedio > * {
+        padding-left: 10%;
+    }
+
+    .divMedio > ul> li:first-child{
+        font-size: x-large;
+        color: brown;
+    }
+
+    a {
+        text-decoration: none; 
+    }
+
+    a:hover {
+        color: purple;
+        font-size: large;
+    }
+
+    a:hover > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #acercaDe {
+        width: 100%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: small;
+    }
+
+    footer {
+        background-color: cadetblue;
+        height: 70px;
+        box-sizing: border-box;
+        padding-top: 10px; 
+    }
+
+    footer > * {
+        float: right;
+    }
+
+    @media only screen and (max-width: 500px) {
+        h1 {
+            visibility: hidden;
+        }
+        header > p {
+            visibility: hidden;
+        }
+        h1::before {
+            content: "Jorge Guerrero";
+            visibility: visible;
+        }
+
+        .divMedio {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    input:disabled {
+        color: red;
+        font-size: medium;
+        text-align: center;
+        background-color: gray;
+    }
+
+</style>
+<body>
+
+    <header>
+        <h1>Jorge Javier Guerrero Herrera</h1>
+        <p>Para curso DASW Otoño 2022</p>
+    </header>
+    <main class="clearfix">
+
+        <div id="descripcion">
+            <img src="https://img.myloview.es/posters/dibujos-animados-de-cara-de-hombre-joven-700-147887377.jpg" alt="Foto Fake" width="30%" height="30%">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab commodi, tempore quisquam aut blanditiis sapiente velit itaque eveniet quo, nisi veniam, illo ex. Expedita accusamus eius earum blanditiis totam molestiae praesentium dolorum at sapiente assumenda aperiam doloribus iusto cupiditate in nostrum nemo, ad voluptates maxime quia quam nihil. Voluptatum sit soluta quis quas et minus quasi eaque eos repudiandae. Dolores facere consequuntur quasi omnis. Illum, ea temporibus. Sapiente nam dolor placeat veritatis eum quibusdam mollitia odit unde soluta fugiat perferendis voluptatibus labore qui tempore distinctio eaque omnis, repellendus incidunt pariatur fugit magni? Consequuntur quaerat quam nulla maxime cum error sit illum libero vero sed in architecto, pariatur cupiditate eius saepe, porro consectetur quae minima nemo placeat natus nihil amet ipsum. Modi doloribus quidem sed, nulla commodi cupiditate, distinctio aliquid, accusantium debitis deserunt adipisci laudantium repellat provident repellendus minima illo nemo est facere delectus? Rerum minus pariatur, dicta quia, nisi vero ratione sint veniam tempore assumenda quam suscipit in a quas distinctio iusto, quis itaque saepe! Saepe, hic! Ex in deserunt dolorem eaque sit iste minima! Unde labore commodi corrupti eius, nihil molestias accusantium consectetur, eveniet omnis animi praesentium? Id harum eaque qui fugiat ipsam molestiae voluptates animi natus maxime debitis error quisquam ad voluptate quod distinctio, reiciendis saepe. Obcaecati incidunt facere omnis labore ipsa, officiis nostrum aut veniam nesciunt sed, et consectetur pariatur quaerat quam eaque iusto esse sunt commodi nisi minima. A maiores accusamus nemo eveniet omnis fugit numquam, incidunt recusandae quo repellat voluptate aperiam deleniti autem dicta.</p>
+        </div>
+        <hr>
+        <div class="divMedio">
+            <h2>Pasatiempos y Gustos</h2>
+            <ul>
+                <li>Cantar</li>
+                <li>Tocar guitarra</li>
+                <li>Tocar saxofón</li>
+                <li>Escuchar música</li>
+                <li>Ver deportes</li>
+                <li>Escuchar podcasts</li>
+                <li><a href="https://www.instagram.com/jorge.guerrero.h/">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="divMedio">
+            <h2>Chencho</h2>
+            <img src="https://cdn.soyunperro.com/wp-content/uploads/2019/07/pitbull.jpg" alt="Foto Fake de mi perro">
+            <p><Strong>Chencho</Strong> es un perro muy lindo, agradable y cariñoso. Hace algunos años lo conocí, por casualidad, cuando fui a casa de una amiga que había rescatado apenas hace un par de semanas a chencho de la calle.
+            Él se veía muy agradable y desde el primer momento supe que yo tenía que cuidar a ese perro, cuando me abrazaba de la pierna con sus patitas y me pedía que lo acarisiara.
+            Así fue como conocí al pitbull más lindo del mundo y el mejor amigo mío y de mi familia.</p>
+        </div>
+        <hr>
+        <div id="acercaDe">
+            <h2>Acerca de esta página</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, enim nostrum, atque harum facilis dolorum, debitis unde laborum aperiam voluptatibus et at quibusdam porro aspernatur cum molestiae sunt placeat saepe illum est totam ab veniam non dolorem? Aliquam fugiat ex, voluptatibus accusantium laudantium itaque, dolor suscipit, ea vero perspiciatis recusandae. Quam unde nostrum ratione libero iusto repudiandae sapiente quibusdam quas? Non quod modi corporis beatae.</p>
+
+            
+        <form enctype="text/plain" method="post" action="mailto:jorge@guerrero.com?subject=Correo de registro">
+            <tr>
+                <td width = "50%"><label for="nombre">Nombre:</label></td>
+                <td width = "50%"><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            
+            <tr>
+                <td width = "50%"><label for="coment">Comentarios:</label></td>
+                <td width = "50%"><textarea name="comentarios" id="coment" cols="60" rows="2"></textarea></td>
+            </tr>
+
+            <tr>
+                <td width = "100%" colspan="2">
+                    <input type="submit" value="Enviar comentarios a " ></input>   
+                </td>
+            </tr>
+            <tr>
+                <td width = "50%"><label for="correo">Email:</label></td>
+                <td width = "50%"><input type="email" name="email" id="correo" value="jorge@guerrero.com" disabled></td>
+            </tr>
+        </form>
+
+        </div>
+        
+    </main>
+    <footer>
+
+        <a href="https://www.w3schools.com/css/css_intro.asp"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="CSS" width="50" height="50"></a>
+        <a href="https://lenguajehtml.com/html/"><img src="https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png" alt="HTML" width="50" height="50"></a>
+        
+    </footer>
+    
+</body>
+</html>
